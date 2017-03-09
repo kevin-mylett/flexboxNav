@@ -25,7 +25,7 @@ a:hover {
 }
 
 /*.wrapper {
-  max-width: 1500px;
+  max-width: 1000px;
   margin: 0 auto;
 }*/
 
@@ -59,6 +59,10 @@ a:hover {
   flex: 1 1 50%;
 }
 
+.fa-caret-down {
+  margin-left: 10px;
+}
+
 
 /*Large Screen Menu*/
 @media (min-width: 991px) {
@@ -76,18 +80,17 @@ a:hover {
     flex-wrap: wrap;
 	}
 
-	.menu li > a:not(:only-child):after {
-       color: #fff;
-       content: ' ▾';
-    }
+  .fa-caret-down {
+    margin-left: 10px;
+  }
 
-    .toggleNav {
-    	display: none;
-    }
+  .toggleNav {
+    display: none;
+  }
 
-    .social {
-      display: none;
-    }
+  .social {
+    display: none;
+  }
 }
 
 
