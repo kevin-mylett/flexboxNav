@@ -39,22 +39,23 @@ a:hover {
   margin: 0;
   padding: 0;
   display: none;
-  flex-direction: column;
 }
 
 .site-navigation ul.open {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .site-navigation ul.open li.sub-menu ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .site-navigation ul li {
-  flex: 1;
+  flex: 1 1 100%;
 }
 
-.social {
+.site-navigation ul li.social {
   flex: 1 1 50%;
 }
 
@@ -63,18 +64,16 @@ a:hover {
 @media (min-width: 991px) {
 	.site-navigation ul {
     display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 	}
 
 	/*Sub-Menu*/
 	.sub-menu ul {
 		display: none;
-		flex-direction: column;
 	}
 
 	.site-navigation ul li:hover > ul {
 		display: flex;
+    flex-wrap: wrap;
 	}
 
 	.menu li > a:not(:only-child):after {
@@ -89,7 +88,6 @@ a:hover {
     .social {
       display: none;
     }
-
 }
 
 
