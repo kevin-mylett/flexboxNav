@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wonder-Bar Navigation Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="wrapper">
+	<nav class="site-navigation">
+	<a href="#" class="toggleNav">☰ Menu</a>
+	  <ul class="menu">
+	  	<li class="social">
+	  		<a href="#"><i class="fa fa-twitter"></i></a>
+	  	</li>
+	  	<li class="social">
+	  		<a href="#"><i class="fa fa-facebook"></i></a>
+	  	</li>
+	    <li><a href="#">Mobile Bar Hire</a></li>
+	    <li><a href="#">Packages</a></li>
+	    <li class="sub-menu"><a href="#">Drinks</a>
+          <ul>
+            <li><a href="#">Drinks Packages</a></li>
+            <li><a href="#">Drinks Machine Hire</a></li>
+            <li><a href="#">Drinks Menu</a></li>
+          </ul>
+        </li>
+	    <li class="sub-menu"><a href="#">Staff</a>
+          <ul>
+            <li><a href="#">Bar-Staff</a></li>
+            <li><a href="#">Mixologists</a></li>
+          </ul>
+        </li>
+	    <li><a href="#">Refrigeration</a></li>
+	    <li><a href="#">Reviews</a></li>
+	    <li><a href="#">Contact Us</a></li>
+	  </ul>
+<!-- 	  <div class="nav-toggle">
+			  <span class="bar bar1"></span>
+			  <span class="bar bar2"></span>
+			  <span class="bar bar3"></span>
+	  </div> -->
+	</nav>
+
+	<h1>Page Title</h1>
+</div>
+
+<script>
+(function toggleNavigation() {
+	var toggle = document.querySelector('.toggleNav');
+	toggle.addEventListener('click', toggleClass);
+
+	function toggleClass() {
+		var menu = document.querySelector('.menu');
+
+		menu.classList.toggle('open');
+	}
+
+})();
+
+</script>
+
+</body>
+</html>
