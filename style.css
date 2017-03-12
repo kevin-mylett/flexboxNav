@@ -18,6 +18,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   transition:all 0.5s;
+  font-size: 12px;
 }
 
 a:hover {
@@ -25,7 +26,7 @@ a:hover {
 }
 
 /*.wrapper {
-  max-width: 1000px;
+  max-width: 970px;
   margin: 0 auto;
 }*/
 
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .site-navigation ul li.social {
-  flex: 1 1 50%;
+  flex: 1 1 25%;
 }
 
 .fa-caret-down {
@@ -73,6 +74,9 @@ a:hover {
 	/*Sub-Menu*/
 	.sub-menu ul {
 		display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #2DAFE8;
 	}
 
 	.site-navigation ul li:hover > ul {
@@ -89,7 +93,7 @@ a:hover {
   }
 
   .social {
-    display: none;
+    order: 1;
   }
 }
 
